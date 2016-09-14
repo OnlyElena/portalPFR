@@ -48,8 +48,8 @@ public class Constants {
         public static final String MAIN = "mainView";
         public static final String ADMIN = "adminView";
         public static final String USER = "userView";
-        public static final String ERROR_403 = "error403View";
-        public static final String ERROR_ALL = "errorAllView";
+        public static final String ERROR_403 = "error/error403View";
+        public static final String ERROR_ALL = "error/errorAllView";
     }
 
     public static class Messages {

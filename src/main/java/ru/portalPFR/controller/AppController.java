@@ -29,6 +29,7 @@ import ru.portalPFR.model.User;
 import ru.portalPFR.model.UserProfile;
 import ru.portalPFR.service.UserProfileService;
 import ru.portalPFR.service.UserService;
+import ru.portalPFR.util.Constants;
 
 /**
  * Created by 048ChubakovaEL on 15.08.2016.
@@ -201,6 +202,21 @@ public class AppController {
     public String home(Locale locale, Model model) {
         logger.info("Welcome home! The client locale is {}.", locale);
         return "index";
+    }
+
+    @RequestMapping(value = Constants.Url.ERROR_403, method = RequestMethod.GET)
+    public String showError403Page() {
+        return Constants.View.ERROR_403;
+    }
+
+    @RequestMapping(value = "oNas", method = RequestMethod.GET)
+    public String showONasPage() {
+        return "oNas";
+    }
+
+    @RequestMapping(value = "pens", method = RequestMethod.GET)
+    public String showPensPage() {
+        return "pens";
     }
 
 

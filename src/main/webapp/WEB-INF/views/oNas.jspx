@@ -1,0 +1,25 @@
+<!--
+  Created by IntelliJ IDEA.
+  User: 048ChubakovaEL
+  Date: 31.08.2016
+  Time: 12:20
+  To change this template use File | Settings | File Templates.
+-->
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/xhtml" version="2.0">
+    <html>
+    <head><title>О нас</title></head>
+    <body>
+    <div class="container-fluid">
+        <h3>О нас</h3>
+
+        <div>
+            <p class="text-center">
+            Информационный портал предназначен....
+
+            </p>
+        </div>
+
+    </div>
+    </body>
+    </html>
+</jsp:root>

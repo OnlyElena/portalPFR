@@ -1,0 +1,94 @@
+<!--
+  Created by IntelliJ IDEA.
+  User: 048ChubakovaEL
+  Date: 18.08.2016
+  Time: 10:16
+  To change this template use File | Settings | File Templates.
+-->
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/xhtml" version="2.0"
+          xmlns:spring="http://www.springframework.org/tags"
+          xmlns:tiles="http://tiles.apache.org/tags-tiles" xmlns:c="http://java.sun.com/jsp/jstl/core"
+          xmlns:security="http://www.springframework.org/security/tags">
+    <html>
+    <jsp:output doctype-root-element="HTML"
+                doctype-system="about:legacy-compat"
+                omit-xml-declaration="yes"/>
+
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:directive.page pageEncoding="UTF-8"/>
+
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>-->
+
+
+        <!--[if lt IE 7]>
+        <spring:url value="/resources/css/bootstrap-ie7.css" var="resourceLink"/>
+        <link rel="stylesheet" href="${resourceLink}" type="text/css"/>
+
+        <spring:url value="/resources/js/css3-mediaqueries.js" var="resourceLink"/>
+        <script type="text/javascript" src="${resourceLink}"></script>
+<![endif]-->
+
+        <!--[if lt IE 8]>
+        <script src="js/css3-mediaqueries.js"></script>
+    <link href="/css/bootstrap-ie7.css" rel="stylesheet">
+
+<![endif]-->
+        <!--[if lt IE 9]>
+<script src="js/css3-mediaqueries.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap-ie7.css" />
+<![endif]-->
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+
+        <spring:url value="/resources/logo.ico" var="resourceLink"/>
+        <link rel="shortcut icon" href="${resourceLink}" type="image/x-icon"/>
+
+        <spring:url value="/resources/css/bootstrapS.css" var="resourceLink"/>
+        <link rel="stylesheet" href="${resourceLink}" type="text/css"/>
+
+        <spring:url value="/resources/js/jquery-3.1.0.js" var="resourceLink"/>
+        <script type="text/javascript" src="${resourceLink}"><!--empty--></script>
+
+        <!--<spring:url value="/resources/js/jquery-3.1.0.min.js" var="resourceLink"/>-->
+        <!--<script type="text/javascript" src="${resourceLink}">&lt;!&ndash;empty&ndash;&gt;</script>-->
+
+        <spring:url value="/resources/js/bootstrap.js" var="resourceLink"/>
+        <script type="text/javascript" src="${resourceLink}"><!--empty--></script>
+
+        <!--<spring:url value="/resources/js/bootstrap.min.js" var="resourceLink"/>-->
+        <!--<script type="text/javascript" src="${resourceLink}">&lt;!&ndash;empty&ndash;&gt;</script>-->
+
+        <spring:url value="/login" var="loginUrl"/>
+        <!--<spring:url value="/signUp" var="signUpUrl"/>-->
+        <spring:url value="/login?locale=en_US" var="localeEnUrl"/>
+        <spring:url value="/login?locale=ru_RU" var="localeRuUrl"/>
+
+
+        <title><spring:message code="application.title"/></title>
+
+        <!--<script>-->
+        <!--$("#myModal").modal()-->
+        <!--</script>-->
+    </head>
+
+    <body>
+
+    <!--<div class="container-fluid">-->
+        <tiles:insertAttribute name="header"/>
+        <tiles:insertAttribute name="content"/>
+        <tiles:insertAttribute name="footer"/>
+    <!--</div>-->
+    </body>
+    </html>
+</jsp:root>
